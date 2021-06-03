@@ -2,8 +2,10 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("This is Home")
+    data = "Hey! I am home data"
+    return HttpResponse(data)
 
 
 def about(request):
-    return HttpResponse("This is About")
+    data = "Hey! I am about data"
+    return HttpResponse(data)
