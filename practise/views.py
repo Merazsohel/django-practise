@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -7,5 +6,8 @@ def home(request):
 
 
 def about(request):
-    data = "Hey! I am about data"
-    return HttpResponse(data)
+    return render(request, "about.html")
+
+
+def contact(request):
+    return render(request, "contact.html")
