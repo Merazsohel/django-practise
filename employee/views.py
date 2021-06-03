@@ -1,11 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def employee(request):
-    data = "Hey! I am employee data"
-    return HttpResponse(data)
+def home(request):
+    return render(request, "employee/index.html")
 
 
 def profile(request):
-    data = "Hey! I am employee profile data"
-    return HttpResponse(data)
+    return render(request, "employee/profile.html")
