@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def employee(request):
+    data = "Hey! I am employee data"
+    return HttpResponse(data)
+
+
+def profile(request):
+    data = "Hey! I am employee profile data"
+    return HttpResponse(data)
